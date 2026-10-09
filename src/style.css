@@ -13,7 +13,7 @@
 .page__header {
   margin: 0;
   box-sizing: border-box;
-  padding: 20px 48px;
+  padding: 20px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +21,7 @@
 }
 
 .search-bar {
+  border-radius: 4px;
   box-sizing: border-box;
   font-family: Avenir, sans-serif;
   color: #3d4e61;
@@ -44,17 +45,23 @@
 }
 
 .search-bar--small {
+  text-shadow: 0 4px 4px 0 #f6f6f7;
   width: 100%;
   height: 42px;
   font-size: 14px;
   text-indent: 33px;
-  text-shadow: 0 4px 4px 0 #f6f6f7;
   background-size: 15px;
   background-position: 13px 15px;
 }
 
 .search-bar:hover {
+  text-shadow: none;
   box-shadow: 0 3px 8px 0 #3d4e6133;
+  border-color: #e1e7ed;
+}
+
+.search-bar--small:hover {
+  text-shadow: none;
 }
 
 .search-bar:focus {
@@ -68,12 +75,7 @@
   text-shadow: 0 4px 4px 0 #f6f6f7;
 }
 
-.search-bar--small:hover {
-  text-shadow: none;
-}
-
 .search-bar--small:focus {
-  font-weight: 900;
   text-shadow: none;
   box-shadow: none;
 }
