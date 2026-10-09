@@ -13,7 +13,7 @@
 .page__header {
   margin: 0;
   box-sizing: border-box;
-  padding: 20px 60px;
+  padding: 20px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,5 +77,5 @@
 
 .search-bar--small:focus {
   text-shadow: none;
-  box-shadow: none;
+  box-shadow: 0 3px 8px 0 #3d4e6133;
 }
